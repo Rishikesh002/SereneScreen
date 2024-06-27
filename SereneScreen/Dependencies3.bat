@@ -15,6 +15,16 @@ IF ERRORLEVEL 1 (
 )
 PAUSE
 
+ECHO Pulling ollama models...
+ollama pull phi3
+ollama pull mistral
+IF ERRORLEVEL 1 (
+    ECHO Failed to pul models.
+    PAUSE
+    EXIT /B 1
+)
+PAUSE
+
 ECHO Installing PyTorch and dependencies...
 conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 pytorch-cuda=12.1 -c pytorch -c nvidia
 IF ERRORLEVEL 1 (

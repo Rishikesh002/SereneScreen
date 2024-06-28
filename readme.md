@@ -18,4 +18,4 @@ Ways to run:
       - Run the "Run.bat" file provided in the serenescreen to activate conda environment and start running the application.
   2. Using command prompt:
       - At serenescreen directory in command prompt, give cmd = "conda activate serenescreen" to activate serenescreen.
-      - Then, run the cmd = "pyhton -m streamlit run app.py" to run the application.
+      - Then, run the cmd = "python -m streamlit run app.py" to run the application.

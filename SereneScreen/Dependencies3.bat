@@ -26,7 +26,7 @@ IF ERRORLEVEL 1 (
 PAUSE
 
 ECHO Installing PyTorch and dependencies...
-conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 pytorch-cuda=12.1 -c pytorch -c nvidia
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 IF ERRORLEVEL 1 (
     ECHO Failed to install PyTorch and dependencies.
     PAUSE
